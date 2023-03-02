@@ -1,0 +1,27 @@
+@font-face {
+  font-family: Hanken Grotesk;
+  font-style: normal;
+  src: url("../fonts/HankenGrotesk-VariableFont_wght.ttf");
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+}
+html,
+body {
+  height: 100%;
+}
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+img {
+  max-width: 100%;
+}
+button {
+  font: inherit;
+}
