@@ -60,9 +60,12 @@ button
 
 h1
   font-size xl-font
+  color white
 
 .result-summary>h2
   font-size lg-font
+  color white
+  margin-bottom 8px
 
 .overline
 .result-breakdown>h2
@@ -85,3 +88,37 @@ button
 .score-msg
 .category-label>p
   font-weight medium-weight
+
+// layout styles
+body
+  width 100vw
+  height 100vh
+
+.result-summary
+  background-image gradient-main
+  padding 24px 24px 40px 24px
+  border-bottom-left-radius 32px
+  border-bottom-right-radius 32px
+  text-align center
+
+.overline
+.final-score-label
+.score-msg
+  color pale-blue
+
+.final-score-container
+  width 140px
+  height 140px
+  display flex
+  flex-direction column
+  justify-content center
+  background-image gradient-accent
+  border-radius 100%
+  margin 24px auto
+
+.final-score-label
+  margin-top -10px
+
+.score-msg
+  width 260px
+  margin 0 auto
