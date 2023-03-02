@@ -25,3 +25,39 @@ img {
 button {
   font: inherit;
 }
+body,
+h1,
+h2,
+p,
+span,
+button {
+  font-family: 'Hanken Grotesk', sans-serif;
+}
+h1 {
+  font-size: 3.5em;
+}
+.result-summary>h2 {
+  font-size: 1.5em;
+}
+.overline,
+.result-breakdown>h2,
+button {
+  font-size: 1.13em;
+}
+.final-score-label,
+.score-msg,
+.category-label>p,
+.category-score {
+  font-size: 1.1em;
+}
+.result-summary>h2,
+.result-breakdown>h2,
+.final-score-label,
+.category-score,
+button {
+  font-weight: 700;
+}
+.score-msg,
+.category-label>p {
+  font-weight: 500;
+}

@@ -4,6 +4,16 @@
   font-style normal
   src url(../fonts/HankenGrotesk-VariableFont_wght.ttf)
 
+// font variables
+extra-bold-weight = 800
+bold-weight = 700
+medium-weight = 500
+
+xl-font = 3.5em
+lg-font = 1.5em
+md-font = 1.13em
+sm-font = 1.1em
+
 // color variables
 reaction-red = #ff5555
 memory-yellow = #ffb21e
@@ -39,3 +49,39 @@ img
 button
   font inherit
 
+// font styles
+body
+h1
+h2
+p
+span
+button
+  font-family 'Hanken Grotesk', sans-serif
+
+h1
+  font-size xl-font
+
+.result-summary>h2
+  font-size lg-font
+
+.overline
+.result-breakdown>h2
+button
+  font-size md-font
+
+.final-score-label
+.score-msg
+.category-label>p
+.category-score
+  font-size sm-font
+
+.result-summary>h2
+.result-breakdown>h2
+.final-score-label
+.category-score
+button
+  font-weight bold-weight
+
+.score-msg
+.category-label>p
+  font-weight medium-weight
