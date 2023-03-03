@@ -16,6 +16,9 @@ body {
   height: 100%;
 }
 body {
+  position: relative;
+  min-height: 100vh;
+  padding-bottom: 2.5rem;
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
 }
@@ -35,6 +38,7 @@ button {
 }
 h1 {
   font-size: 3.5em;
+  font-weight: 800;
   color: #fff;
 }
 .result-summary>h2 {
@@ -53,6 +57,7 @@ button {
 .category-score {
   font-size: 1.1em;
 }
+.overline,
 .result-summary>h2,
 .result-breakdown>h2,
 .final-score-label,
@@ -63,6 +68,15 @@ button {
 .score-msg,
 .category-label>p {
   font-weight: 500;
+}
+.attribution {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 2.5rem;
+}
+.main-component {
+  background-color: #fff;
 }
 body {
   width: 100vw;
@@ -161,4 +175,57 @@ body {
 }
 .result-breakdown>button:hover {
   background-image: linear-gradient(180deg, #75f 0%, #6943ff 0.01%, #2f2ce9 100%);
+}
+@media screen and (min-width: 768px) {
+  body {
+    padding: 24px;
+    background-color: #ecf2ff;
+  }
+  .main-component {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    display: flex;
+    border-radius: 32px;
+    width: 736px;
+    height: 512px;
+    margin: 0;
+    box-shadow: 0px 30px 60px rgba(61,108,236,0.15);
+  }
+  .result-summary {
+    border-radius: 32px;
+    width: 50%;
+  }
+  .result-breakdown {
+    width: 50%;
+  }
+  .overline {
+    font-size: 1.5em;
+  }
+  h1 {
+    font-size: 5em;
+  }
+  .result-summary>h2 {
+    font-size: 2em;
+  }
+  .final-score-label,
+  .score-msg,
+  .category-label,
+  .category-score,
+  button {
+    font-size: 1.13em;
+  }
+  .final-score-container {
+    width: 200px;
+    height: 200px;
+    margin-bottom: 28px;
+  }
+  .overline {
+    margin-bottom: 36px;
+  }
+  .result-summary>h2 {
+    margin-bottom: 14px;
+  }
 }

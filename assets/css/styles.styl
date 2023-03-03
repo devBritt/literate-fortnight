@@ -9,10 +9,18 @@ extra-bold-weight = 800
 bold-weight = 700
 medium-weight = 500
 
+// 72px
+xxl-font = 5em
+// 56px
 xl-font = 3.5em
-lg-font = 1.5em
-md-font = 1.13em
-sm-font = 1.1em
+// 32px
+lg-font = 2em
+// 24px
+md-font = 1.5em
+// 18px
+sm-font = 1.13em
+// 16px
+xs-font = 1.1em
 
 // color variables
 reaction-red = #ff5555
@@ -40,6 +48,9 @@ body
   height 100%
 
 body
+  position relative
+  min-height 100vh
+  padding-bottom 2.5rem
   line-height 1.5
   -webkit-font-smoothing antialiased
 
@@ -60,24 +71,26 @@ button
 
 h1
   font-size xl-font
+  font-weight extra-bold-weight
   color white
 
 .result-summary>h2
-  font-size lg-font
+  font-size md-font
   color white
   margin-bottom 8px
 
 .overline
 .result-breakdown>h2
 button
-  font-size md-font
+  font-size sm-font
 
 .final-score-label
 .score-msg
 .category-label>p
 .category-score
-  font-size sm-font
+  font-size xs-font
 
+.overline
 .result-summary>h2
 .result-breakdown>h2
 .final-score-label
@@ -88,6 +101,17 @@ button
 .score-msg
 .category-label>p
   font-weight medium-weight
+
+// position attribution at the bottom of the page
+.attribution
+  position absolute
+  bottom 0
+  width 100%
+  height 2.5rem
+
+// main component styles
+.main-component
+  background-color white
 
 // score summary panel styles
 body
@@ -181,3 +205,57 @@ body
   background-color dark-navy
   &:hover
     background-image gradient-main
+
+// MEDIA QUERIES
+// TABLET OR LARGER
+@media screen and (min-width: 768px)
+  body
+    padding 24px
+    background-color off-white
+
+  .main-component
+    position absolute
+    top 50%
+    left 50%
+    -ms-transform translate(-50%, -50%)
+    transform translate(-50%, -50%)
+    display flex
+    border-radius 32px
+    width 736px
+    height 512px
+    margin 0
+    box-shadow 0px 30px 60px rgba(61, 108, 236, 0.15)
+    
+  .result-summary
+    border-radius 32px
+    width 50%
+
+  .result-breakdown
+    width 50%
+
+  .overline
+    font-size md-font
+
+  h1
+    font-size xxl-font
+
+  .result-summary>h2
+    font-size lg-font
+
+  .final-score-label
+  .score-msg
+  .category-label
+  .category-score
+  button
+    font-size sm-font
+
+  .final-score-container
+    width 200px
+    height 200px
+    margin-bottom 28px
+
+  .overline
+    margin-bottom 36px
+
+  .result-summary>h2
+    margin-bottom 14px
