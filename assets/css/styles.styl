@@ -89,7 +89,7 @@ button
 .category-label>p
   font-weight medium-weight
 
-// layout styles
+// score summary panel styles
 body
   width 100vw
   height 100vh
@@ -122,3 +122,62 @@ body
 .score-msg
   width 260px
   margin 0 auto
+
+// score breakdown panel styles
+.result-breakdown
+  padding 32px
+
+.result-breakdown>h2
+.category-score
+  color dark-navy
+
+.low-opacity
+  opacity 50%
+
+.result-breakdown>h2
+  margin-bottom 24px
+
+#reaction
+  background-color #fff6f6
+  &>.category-label
+    color reaction-red
+
+#memory
+  background-color #fffbf4
+  &>.category-label
+    color memory-yellow
+
+#verbal
+  background-color #f2fcf9
+  &>.category-label
+    color verbal-green
+
+#visual
+  background-color #f3f4fd
+  &>.category-label
+    color visual-blue
+
+.category-container
+  display flex
+  justify-content space-between
+  align-items center
+  border-radius 12px
+  padding 16px
+  &:not(:last-child)
+    margin-bottom 16px
+
+.category-label
+  display flex
+  &>img
+    margin-right 16px
+
+.result-breakdown>button
+  margin-top 24px
+  width 100%
+  border none
+  border-radius 100px
+  padding 16px 0
+  color white
+  background-color dark-navy
+  &:hover
+    background-image gradient-main
